@@ -1,0 +1,29 @@
+
+classInheritSingle
+	{
+		protected String str;
+	
+	InheritSingle(  ) {
+		
+		str = "Java ";
+	}
+}
+classSubClass extends InheritSingle
+{
+		SubClass(  ) {
+			str = str.concat("World !!!");
+	}
+		void display(  )
+	{
+				System.out.println(str);
+	}
+}
+classMainClass {
+		public static void main (String args[ ]){
+		
+		SubClassobj = new SubClass( );
+		
+		obj.display( );
+	}
+}
+
